@@ -13,16 +13,28 @@ public enum L {
     //TODO: WELCOME
     WELCOME {
         @Override
-        public String get(@NotNull Languages language) {
+        public String[] get(@NotNull Languages language) {
             if (language.equals(FRENCH))
-                return "§f§l§m------------§d §lMakiru §f§l§m------------\r\n\r\n" +
-                        "§b§lINFO §8» §7Le serveur est en phase §cBêta§7, en cas d'incidents, merci de bien vouloir nous le signaler.\r\n\r\n" +
-                        "§e§lSalutations, {name}\r\n\r\n" +
-                        "§7§oPour avoir quelques informations à propos du serveur » §l/info\r\n";
-            return "§f§l§m---------§d §lMakiru §f§l§m---------\r\n\r\n" +
-                    "§b§lINFO §8» §7The server is in §cBeta§7 phase, in case of incidents, please report it to us.\r\n\r\n" +
-                    "§e§lGreetings, {name}\r\n\r\n" +
-                    "§7§oTo have some information about the server » §l/info\r\n";
+                return new String[]{
+                        "§8§l§m------------§d §lMakiru §8§l§m------------",
+                        " ",
+                        "§b§lINFO §8» §7Le serveur est en phase §cBêta§7, en cas d'incidents, merci de bien vouloir nous le signaler.",
+                        " ",
+                        "§e§lSalutations, {name}",
+                        " ",
+                        "§7§oPour avoir quelques informations à propos du serveur » §l/info",
+                        " "
+                };
+            return new String[]{
+                    "§8§l§m---------§d §lMakiru §8§l§m---------",
+                    " ",
+                    "§b§lINFO §8» §7The server is in §cBeta§7 phase, in case of incidents, please report it to us.",
+                    " ",
+                    "§e§lGreetings, {name}",
+                    " ",
+                    "§7§oTo have some information about the server » §l/info",
+                    " "
+            };
         }
     },
 
@@ -109,16 +121,31 @@ public enum L {
     //TODO: NAVIGATOR_TOOLBAR
     NAVIGATOR_TOOLBAR {
         @Override
+        public String get(@NotNull final Languages language) {
+            if (language.equals(FRENCH))
+                return "§7» §e§lNavigateur §8(Click-Droit)";
+            return "§7» §e§lNavigator §8(Click-Droit)";
+        }
+    },
+
+    //TODO: NAVIGATOR_LORES_TOOLBAR
+    NAVIGATOR_LORES_TOOLBAR {
+        @Override
         public String[] get(@NotNull final Languages language) {
             if (language.equals(FRENCH))
                 return new String[]{
-                        "§7» §e§lNavigateur §8(Click-Droit)",
-                        "§cNavigue§7,\n§bprends plaisir §7et\n§aamuses-toi §7sur le serveur en t'aidant de cette boussole.",
+                        " ",
+                        "§cNavigue§7,",
+                        "§bprends plaisir",
+                        "§7et §aamuses-toi §7sur le serveur en t'aidant de cette boussole.",
+                        " ",
                         "§8Accéder au Navigateur."
                 };
             return new String[]{
-                    "§7» §e§lNavigator §8(Click-Droit)",
-                    "§cBrowse§7,\n§bhave fun §7and\n§ahave fun §7on the server using this compass.",
+                    " ",
+                    "§cBrowse§7",
+                    "§7and §ahave fun §7on the server using this compass.",
+                    " ",
                     "§8Access the Navigator."
             };
         }
@@ -127,16 +154,36 @@ public enum L {
     //TODO: ODDS_AND_ENDS_TOOLBAR
     ODDS_AND_ENDS_TOOLBAR {
         @Override
+        public String get(@NotNull final Languages language) {
+            if (language.equals(FRENCH))
+                return "§7» §f§lBric-À-Brac §8(Click-Droit)";
+            return "§7» §f§lOdds-And-Ends §8(Right-Click)";
+        }
+    },
+
+    //TODO: ODDS_AND_ENDS_LORES_TOOLBAR
+    ODDS_AND_ENDS_LORES_TOOLBAR {
+        @Override
         public String[] get(@NotNull final Languages language) {
             if (language.equals(FRENCH))
                 return new String[]{
-                        "§7» §f§lBric-À-Brac §8(Click-Droit)",
-                        "§7Trouver votre §bplaisir §7dans le §fbric-à-brac§7,\n§7vos §eboosters§7,\n§7vos §aaméliorations dans les jeux§7,\n§7vos §canimaux de compagnie §7et\n§dpleins d'autres choses encore§7...",
+                        " ",
+                        "§7Trouver votre §bplaisir §7dans le §fbric-à-brac§7,",
+                        "§7vos §eboosters§7,",
+                        "§7vos §aaméliorations dans les jeux§7,",
+                        "§7vos §canimaux de compagnie",
+                        "§7et§dpleins d'autres choses encore§7...",
+                        " ",
                         "§8Accéder au Bric-À-Brac."
                 };
             return new String[]{
-                    "§7» §f§lOdds-And-Ends §8(Right-Click)",
-                    "§7Find your §bpleasure §7in §fodds and ends§7,\n§7your §eboosters§7,\n§7§ayour improvements in games§7,\n§7your §cpets §7and\n§7§dmany other things67...",
+                    " ",
+                    "§7Find your §bpleasure §7in §fodds and ends§7,",
+                    "§7your §eboosters§7,",
+                    "§7§ayour improvements in games§7,",
+                    "§7your §cpets",
+                    "§7and §7§dmany other things67...",
+                    " ",
                     "§8Access the Odds-And-Ends."
             };
         }
@@ -160,19 +207,57 @@ public enum L {
         }
     },
 
-    //TODO: SHOP_TOOLBAR
-    SHOP_TOOLBAR {
+    //TODO: PROFIL_LORES_TOOLBAR
+    PROFIL_LORES_TOOLBAR {
         @Override
         public String[] get(@NotNull final Languages language) {
             if (language.equals(FRENCH))
                 return new String[]{
-                        "§7» §b§lBoutique §8(Click-Droit)",
-                        "§7Faites vos §cachats §7dans la boutique,\n§bgrâce à la monnaie que vous récupérez en jouant sur le serveur§7,\n§7et §aau point en gagnant des parties§7...",
+                        " ",
+                        "§7Regarder les §cstatistiques §7de votre profil,",
+                        "§7et §equelque information §7sur ce dernier.",
+                        " ",
+                        "§8Accéder au Profil."
+                };
+            return new String[]{
+                    " ",
+                    "§7Look at your profile §cstatistics§7,",
+                    "§7and §esome information §7about it.",
+                    " ",
+                    "§8Access the Odds-And-Ends Profile."
+            };
+        }
+    },
+
+    //TODO: SHOP_TOOLBAR
+    SHOP_TOOLBAR {
+        @Override
+        public String get(@NotNull final Languages language) {
+            if (language.equals(FRENCH))
+                return "§7» §b§lBoutique §8(Click-Droit)";
+            return "§7» §b§lShop §8(Right-Click)";
+        }
+    },
+
+    //TODO: SHOP_LORES_TOOLBAR
+    SHOP_LORES_TOOLBAR {
+        @Override
+        public String[] get(@NotNull final Languages language) {
+            if (language.equals(FRENCH))
+                return new String[]{
+                        " ",
+                        "§7Faites vos §cachats §7dans la boutique,",
+                        "§bgrâce à la monnaie que vous récupérez en jouant sur le serveur§7,",
+                        "§7et §aau point en gagnant des parties§7...",
+                        " ",
                         "§8Accéder à la Boutique."
                 };
             return new String[]{
-                    "§7» §b§lShop §8(Right-Click)",
-                    "§7Make your §cpurchases §7in the shop,\n§bthanks to the currency you get by playing on the server§7,\n§7and to §athe point by winning games§7...",
+                    " ",
+                    "§7Make your §cpurchases §7in the shop,",
+                    "§bthanks to the currency you get by playing on the server§7,",
+                    "§7and to §athe point by winning games§7...",
+                    " ",
                     "§8Access the Shop."
             };
         }
@@ -181,16 +266,30 @@ public enum L {
     //TODO: SETTINGS_TOOLBAR
     SETTINGS_TOOLBAR {
         @Override
+        public String get(@NotNull final Languages language) {
+            if (language.equals(FRENCH))
+                return "§7» §c§lPréférences §8(Click-Droit)";
+            return "§7» §c§lSettings §8(Right-Click)";
+        }
+    },
+
+    //TODO: SETTINGS_LORES_TOOLBAR
+    SETTINGS_LORES_TOOLBAR {
+        @Override
         public String[] get(@NotNull final Languages language) {
             if (language.equals(FRENCH))
                 return new String[]{
-                        "§7» §c§lPréférences §8(Click-Droit)",
-                        "§7Configurer le §ccomportement §7et\n§7le gameplay pour votre bien-être en jeu.",
+                        " ",
+                        "§7Configurer le §ccomportement",
+                        "§7et §7le gameplay pour votre bien-être en jeu.",
+                        " ",
                         "§8Accéder aux Préférences."
                 };
             return new String[]{
-                    "§7» §c§lSettings §8(Right-Click)",
-                    "§cConfigure behavior §7and\n§7gameplay for your in-game well-being.",
+                    " ",
+                    "§cConfigure behavior",
+                    "§7and §7gameplay for your in-game well-being.",
+                    " ",
                     "§8Access the Settings."
             };
         }
