@@ -15,14 +15,14 @@ public enum L {
         @Override
         public String get(@NotNull Languages language) {
             if (language.equals(FRENCH))
-                return "§f§l§m---------§d §lMakiru §f§l§m---------\n\n" +
-                        "§b§lINFO §8» §7Le serveur est en phase §cBêta§7, en cas d'incidents, merci de bien vouloir nous le signaler.\n\n" +
-                        "§eSalutations, {name}\n\n" +
-                        "§8§oPour avoir quelques informations à propos du serveur » §l/info\n";
-            return "§f§l§m---------§d §lMakiru §f§l§m---------\n\n" +
-                    "§b§lINFO §8» §7The server is in §cBeta§7 phase, in case of incidents, please report it to us.\n\n" +
-                    "§eGreetings, {name}\n\n" +
-                    "§8§oTo have some information about the server » §l/info\n";
+                return "§f§l§m------------§d §lMakiru §f§l§m------------\r\n\r\n" +
+                        "§b§lINFO §8» §7Le serveur est en phase §cBêta§7, en cas d'incidents, merci de bien vouloir nous le signaler.\r\n\r\n" +
+                        "§e§lSalutations, {name}\r\n\r\n" +
+                        "§7§oPour avoir quelques informations à propos du serveur » §l/info\r\n";
+            return "§f§l§m---------§d §lMakiru §f§l§m---------\r\n\r\n" +
+                    "§b§lINFO §8» §7The server is in §cBeta§7 phase, in case of incidents, please report it to us.\r\n\r\n" +
+                    "§e§lGreetings, {name}\r\n\r\n" +
+                    "§7§oTo have some information about the server » §l/info\r\n";
         }
     },
 
@@ -113,12 +113,12 @@ public enum L {
             if (language.equals(FRENCH))
                 return new String[]{
                         "§7» §e§lNavigateur §8(Click-Droit)",
-                        "§cNavigue, §bprends plaisir §7et §aamuses-toi §7sur le serveur en t'aidant de cette boussole.",
+                        "§cNavigue§7,\n§bprends plaisir §7et\n§aamuses-toi §7sur le serveur en t'aidant de cette boussole.",
                         "§8Accéder au Navigateur."
                 };
             return new String[]{
                     "§7» §e§lNavigator §8(Click-Droit)",
-                    "§cBrowse, §bhave fun §7and §ahave fun §7on the server using this compass.",
+                    "§cBrowse§7,\n§bhave fun §7and\n§ahave fun §7on the server using this compass.",
                     "§8Access the Navigator."
             };
         }
@@ -131,12 +131,12 @@ public enum L {
             if (language.equals(FRENCH))
                 return new String[]{
                         "§7» §f§lBric-À-Brac §8(Click-Droit)",
-                        "§7Trouver votre §bplaisir §7dans le §fbric-à-brac§7, vos §eboosters§7, vos §aaméliorations dans les jeux§7, vos §canimaux de compagnie §7et §dpleins d'autres choses encore§7...",
+                        "§7Trouver votre §bplaisir §7dans le §fbric-à-brac§7,\n§7vos §eboosters§7,\n§7vos §aaméliorations dans les jeux§7,\n§7vos §canimaux de compagnie §7et\n§dpleins d'autres choses encore§7...",
                         "§8Accéder au Bric-À-Brac."
                 };
             return new String[]{
                     "§7» §f§lOdds-And-Ends §8(Right-Click)",
-                    "§7Find your §bpleasure §7in §fodds and ends§7, your §eboosters§7, §ayour improvements in games§7, your §cpets §7and §dmany other things67...",
+                    "§7Find your §bpleasure §7in §fodds and ends§7,\n§7your §eboosters§7,\n§7§ayour improvements in games§7,\n§7your §cpets §7and\n§7§dmany other things67...",
                     "§8Access the Odds-And-Ends."
             };
         }
@@ -149,12 +149,12 @@ public enum L {
             if (language.equals(FRENCH))
                 return new String[]{
                         "§7» §a§lProfil §8(Click-Droit)",
-                        "§7Regarder les §cstatistiques §7de votre profil, et §equelque information §7sur ce dernier.",
+                        "§7Regarder les §cstatistiques §7de votre profil,\n§7et §equelque information §7sur ce dernier.",
                         "§8Accéder au Profil."
                 };
             return new String[]{
                     "§7» §a§lProfile §8(Right-Click)",
-                    "§7Look at your profile §cstatistics§7, and §esome information §7about it.",
+                    "§7Look at your profile §cstatistics§7,\n§7and §esome information §7about it.",
                     "§8Access the Odds-And-Ends Profile."
             };
         }
@@ -167,12 +167,12 @@ public enum L {
             if (language.equals(FRENCH))
                 return new String[]{
                         "§7» §b§lBoutique §8(Click-Droit)",
-                        "§7Faites vos §cachats §7dans la boutique, §bgrâce à la monnaie que vous récupérez en jouant sur le serveur§7, et §aau point en gagnant des parties§7...",
+                        "§7Faites vos §cachats §7dans la boutique,\n§bgrâce à la monnaie que vous récupérez en jouant sur le serveur§7,\n§7et §aau point en gagnant des parties§7...",
                         "§8Accéder à la Boutique."
                 };
             return new String[]{
                     "§7» §b§lShop §8(Right-Click)",
-                    "§7Make your §cpurchases §7in the shop, §bthanks to the currency you get by playing on the server§7, and to §athe point by winning games§7...",
+                    "§7Make your §cpurchases §7in the shop,\n§bthanks to the currency you get by playing on the server§7,\n§7and to §athe point by winning games§7...",
                     "§8Access the Shop."
             };
         }
@@ -185,12 +185,12 @@ public enum L {
             if (language.equals(FRENCH))
                 return new String[]{
                         "§7» §c§lPréférences §8(Click-Droit)",
-                        "§cConfigurer le comportement et le gameplay pour votre bien-être en jeu.",
+                        "§7Configurer le §ccomportement §7et\n§7le gameplay pour votre bien-être en jeu.",
                         "§8Accéder aux Préférences."
                 };
             return new String[]{
                     "§7» §c§lSettings §8(Right-Click)",
-                    "§cConfigure behavior and gameplay for your in-game well-being.",
+                    "§cConfigure behavior §7and\n§7gameplay for your in-game well-being.",
                     "§8Access the Settings."
             };
         }
