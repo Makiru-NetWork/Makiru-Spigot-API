@@ -6,7 +6,7 @@
 
     <groupId>net.makiru</groupId>
     <artifactId>Makiru-Spigot-API</artifactId>
-    <version>0.3</version>
+    <version>0.4</version>
 
     <build>
         <plugins>
@@ -45,7 +45,7 @@
         <dependency>
             <groupId>net.makiru</groupId>
             <artifactId>Makiru-API</artifactId>
-            <version>0.3.9</version>
+            <version>0.3.10</version>
         </dependency>
     </dependencies>
 
