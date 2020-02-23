@@ -122,11 +122,24 @@ public class Inventory_B {
         return this;
     }
 
+    public Inventory_B fillNull(ItemStack itemStack, int start, int stop) {
+        this.fillNull(itemStack, start, stop, false);
+        return this;
+    }
+
+    public Inventory_B fillNull(ItemStack itemStack, int start, int stop, boolean includeStop) {
+        for (int i = start; includeStop ? i <= stop : i < stop; i++) {
+            if (this.inventory.getItem(i) == null)
+                this.inventory.setItem(i, itemStack);
+        }
+        return this;
+    }
+
     public Inventory_B clone() throws CloneNotSupportedException {
         return (Inventory_B) super.clone();
     }
 
-    public Inventory getInventory() {
+    public Inventory toInventory() {
         return this.inventory;
     }
 
