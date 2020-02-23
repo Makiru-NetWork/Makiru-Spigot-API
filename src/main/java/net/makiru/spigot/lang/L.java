@@ -172,7 +172,7 @@ public enum L {
                         "§7vos §eboosters§7,",
                         "§7vos §aaméliorations dans les jeux§7,",
                         "§7vos §canimaux de compagnie",
-                        "§7et§dpleins d'autres choses encore§7...",
+                        "§7et §dpleins d'autres choses encore§7...",
                         " ",
                         "§8Accéder au Bric-À-Brac."
                 };
@@ -192,18 +192,10 @@ public enum L {
     //TODO: PROFIL_TOOLBAR
     PROFIL_TOOLBAR {
         @Override
-        public String[] get(@NotNull final Languages language) {
+        public String get(@NotNull final Languages language) {
             if (language.equals(FRENCH))
-                return new String[]{
-                        "§7» §a§lProfil §8(Click-Droit)",
-                        "§7Regarder les §cstatistiques §7de votre profil,\n§7et §equelque information §7sur ce dernier.",
-                        "§8Accéder au Profil."
-                };
-            return new String[]{
-                    "§7» §a§lProfile §8(Right-Click)",
-                    "§7Look at your profile §cstatistics§7,\n§7and §esome information §7about it.",
-                    "§8Access the Odds-And-Ends Profile."
-            };
+                return "§7» §a§lProfil §8(Click-Droit)";
+            return  "§7» §a§lProfile §8(Right-Click)";
         }
     },
 
