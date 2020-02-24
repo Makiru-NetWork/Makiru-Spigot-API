@@ -195,7 +195,7 @@ public enum L {
         public String get(@NotNull final Languages language) {
             if (language.equals(FRENCH))
                 return "§7» §a§lProfil";
-            return  "§7» §a§lProfile";
+            return "§7» §a§lProfile";
         }
     },
 
@@ -284,6 +284,26 @@ public enum L {
                     " ",
                     "§8Access the Settings."
             };
+        }
+    },
+
+    //TODO: CLOSE
+    CLOSE {
+        @Override
+        public String get(@NotNull Languages language) {
+            if (language.equals(FRENCH))
+                return "§7» §c§lFermer";
+            return "§7» §c§lClose";
+        }
+    },
+
+    //TODO: BLACK
+    BLACK {
+        @Override
+        public String get(@NotNull Languages language) {
+            if(language.equals(FRENCH))
+                return "§7» §c§lRetour";
+            return "§7» §c§lBack";
         }
     },
 
