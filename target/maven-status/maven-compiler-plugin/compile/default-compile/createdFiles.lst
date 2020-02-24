@@ -1,5 +1,6 @@
 net/makiru/spigot/lang/L$3.class
 net/makiru/spigot/builders/ItemStack_B.class
+net/makiru/spigot/lang/L$26.class
 net/makiru/spigot/lang/L$16.class
 net/makiru/spigot/lang/L$24.class
 net/makiru/spigot/lang/L$14.class
@@ -17,6 +18,7 @@ net/makiru/spigot/lang/L$25.class
 net/makiru/spigot/lang/L$20.class
 net/makiru/spigot/lang/L$10.class
 net/makiru/spigot/tools/PacketsUtils.class
+net/makiru/spigot/lang/L$27.class
 net/makiru/spigot/lang/L$17.class
 net/makiru/spigot/lang/L$7.class
 net/makiru/spigot/lang/L$23.class
