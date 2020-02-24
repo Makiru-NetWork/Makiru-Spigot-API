@@ -118,18 +118,18 @@ public enum L {
     //TODO:
     //TODO: HUB
     //TODO: TOOLBAR
-    //TODO: NAVIGATOR_TOOLBAR
-    NAVIGATOR_TOOLBAR {
+    //TODO: NAVIGATOR
+    NAVIGATOR {
         @Override
         public String get(@NotNull final Languages language) {
             if (language.equals(FRENCH))
-                return "§7» §e§lNavigateur §8(Click-Droit)";
-            return "§7» §e§lNavigator §8(Click-Droit)";
+                return "§7» §e§lNavigateur";
+            return "§7» §e§lNavigator";
         }
     },
 
-    //TODO: NAVIGATOR_LORES_TOOLBAR
-    NAVIGATOR_LORES_TOOLBAR {
+    //TODO: NAVIGATOR_LORES
+    NAVIGATOR_LORES {
         @Override
         public String[] get(@NotNull final Languages language) {
             if (language.equals(FRENCH))
@@ -151,18 +151,18 @@ public enum L {
         }
     },
 
-    //TODO: ODDS_AND_ENDS_TOOLBAR
-    ODDS_AND_ENDS_TOOLBAR {
+    //TODO: ODDS_AND_ENDS
+    ODDS_AND_ENDS {
         @Override
         public String get(@NotNull final Languages language) {
             if (language.equals(FRENCH))
-                return "§7» §f§lBric-À-Brac §8(Click-Droit)";
-            return "§7» §f§lOdds-And-Ends §8(Right-Click)";
+                return "§7» §f§lBric-À-Brac";
+            return "§7» §f§lOdds-And-Ends";
         }
     },
 
-    //TODO: ODDS_AND_ENDS_LORES_TOOLBAR
-    ODDS_AND_ENDS_LORES_TOOLBAR {
+    //TODO: ODDS_AND_ENDS_LORES
+    ODDS_AND_ENDS_LORES {
         @Override
         public String[] get(@NotNull final Languages language) {
             if (language.equals(FRENCH))
@@ -189,18 +189,18 @@ public enum L {
         }
     },
 
-    //TODO: PROFIL_TOOLBAR
-    PROFIL_TOOLBAR {
+    //TODO: PROFIL
+    PROFIL {
         @Override
         public String get(@NotNull final Languages language) {
             if (language.equals(FRENCH))
-                return "§7» §a§lProfil §8(Click-Droit)";
-            return  "§7» §a§lProfile §8(Right-Click)";
+                return "§7» §a§lProfil";
+            return "§7» §a§lProfile";
         }
     },
 
-    //TODO: PROFIL_LORES_TOOLBAR
-    PROFIL_LORES_TOOLBAR {
+    //TODO: PROFIL_LORES
+    PROFIL_LORES {
         @Override
         public String[] get(@NotNull final Languages language) {
             if (language.equals(FRENCH))
@@ -221,18 +221,18 @@ public enum L {
         }
     },
 
-    //TODO: SHOP_TOOLBAR
-    SHOP_TOOLBAR {
+    //TODO: SHOP
+    SHOP {
         @Override
         public String get(@NotNull final Languages language) {
             if (language.equals(FRENCH))
-                return "§7» §b§lBoutique §8(Click-Droit)";
-            return "§7» §b§lShop §8(Right-Click)";
+                return "§7» §b§lBoutique";
+            return "§7» §b§lShop";
         }
     },
 
-    //TODO: SHOP_LORES_TOOLBAR
-    SHOP_LORES_TOOLBAR {
+    //TODO: SHOP_LORES
+    SHOP_LORES {
         @Override
         public String[] get(@NotNull final Languages language) {
             if (language.equals(FRENCH))
@@ -255,18 +255,18 @@ public enum L {
         }
     },
 
-    //TODO: SETTINGS_TOOLBAR
-    SETTINGS_TOOLBAR {
+    //TODO: SETTINGS
+    SETTINGS {
         @Override
         public String get(@NotNull final Languages language) {
             if (language.equals(FRENCH))
-                return "§7» §c§lPréférences §8(Click-Droit)";
-            return "§7» §c§lSettings §8(Right-Click)";
+                return "§7» §c§lPréférences";
+            return "§7» §c§lSettings";
         }
     },
 
-    //TODO: SETTINGS_LORES_TOOLBAR
-    SETTINGS_LORES_TOOLBAR {
+    //TODO: SETTINGS_LORES
+    SETTINGS_LORES {
         @Override
         public String[] get(@NotNull final Languages language) {
             if (language.equals(FRENCH))
@@ -284,6 +284,26 @@ public enum L {
                     " ",
                     "§8Access the Settings."
             };
+        }
+    },
+
+    //TODO: CLOSE
+    CLOSE {
+        @Override
+        public String get(@NotNull Languages language) {
+            if (language.equals(FRENCH))
+                return "§7» §c§lFermer";
+            return "§7» §c§lClose";
+        }
+    },
+
+    //TODO: BLACK
+    BLACK {
+        @Override
+        public String get(@NotNull Languages language) {
+            if(language.equals(FRENCH))
+                return "§7» §c§lRetour";
+            return "§7» §c§lBack";
         }
     },
 

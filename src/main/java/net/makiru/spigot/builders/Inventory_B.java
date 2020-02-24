@@ -62,7 +62,7 @@ public class Inventory_B {
     }
 
     public Inventory_B(@Nullable InventoryHolder owner, int size, @NotNull String title) {
-        this.inventory = Bukkit.createInventory(owner, size);
+        this.inventory = Bukkit.createInventory(owner, size, title);
     }
 
     public Inventory_B setItem(int pos, ItemStack itemStack) {
