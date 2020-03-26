@@ -426,6 +426,30 @@ public enum L {
         },
 
         //TODO: DEATHNOTE_WEREWOLF_LORES
+        DEATHNOTE_LORES {
+            @Override
+            public String[] get(@NotNull Languages language) {
+                if (language.equals(FRENCH))
+                    return new String[]{
+                            "§aI§bn§cé§dd§ei§ft",
+                            " ",
+                            "§7Version §8» §cLoup-Garou",
+                            "§7Version §8» 8§eUHC",
+                            " ",
+                            "§cJouer dés maintenant."
+                    };
+                return new String[]{
+                        "§aN§bo§cv§de§el",
+                        " ",
+                        "§7Version §8» §cWerewolf",
+                        "§7Version §8» 8§eUHC",
+                        " ",
+                        "§cPlay now."
+                };
+            }
+        },
+
+        //TODO: DEATHNOTE_WEREWOLF_LORES
         DEATHNOTE_WEREWOLF_LORES {
             @Override
             public String[] get(@NotNull Languages language) {
@@ -461,6 +485,42 @@ public enum L {
                         "§eType §8» §fStrategy, Role playing",
                         "§bDuration §8» §f30 minutes",
                         "§dNumbers of players §8» §f2 to 12 players",
+                        " ",
+                        "§cPlay now."
+                };
+            }
+        },
+
+        //TODO: DEATHNOTE_WEREWOLF_LORES
+        DEATHNOTE_UHC_LORES {
+            @Override
+            public String[] get(@NotNull Languages language) {
+                if (language.equals(FRENCH))
+                    return new String[]{
+                            "§aI§bn§cé§dd§ei§ft",
+                            " ",
+                            "§7§oLe mode Ultra Hardcore (abrégé en UHC)",
+                            "est un mode de jeu augmentant la difficulté en survie.",
+                            "Ce mode repose principalement sur l'absence de régénération de vie naturelle.",
+                            "Basé sur le manga/animé DeathNote.",
+                            " ",
+                            "§eGenre §8» §fStratégie, Réflexion, Trahison",
+                            "§bDurée §8» §f30 minutes",
+                            "§dNombre de joueurs §8» §f8 à 32 joueurs",
+                            " ",
+                            "§cJouer dés maintenant."
+                    };
+                return new String[]{
+                        "§aN§bo§cv§de§el",
+                        " ",
+                        "§7§oUltra Hardcore mode (abbreviated as UHC)",
+                        "is a game mode that increases the difficulty in survival.",
+                        "This mode is mainly based on the absence of regeneration of natural life.",
+                        "Based on the manga / animated DeathNote.",
+                        " ",
+                        "§eType §8» §fStrategy, Thinking, Betrayal",
+                        "§bDuration §8» §f30 minutes",
+                        "§dNumbers of players §8» §f8 to 32 players",
                         " ",
                         "§cPlay now."
                 };
@@ -584,8 +644,8 @@ public enum L {
             }
         },
 
-        //TODO: BLACK
-        BLACK {
+        //TODO: BACK
+        BACK {
             @Override
             public String get(@NotNull Languages language) {
                 if (language.equals(FRENCH))
