@@ -1,4 +1,4 @@
-package net.makiru.spigot.builders;
+package net.makiru.spigot.api.builders;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Material;

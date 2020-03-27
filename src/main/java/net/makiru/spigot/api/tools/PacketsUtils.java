@@ -1,4 +1,4 @@
-package net.makiru.spigot.tools;
+package net.makiru.spigot.api.tools;
 
 import net.minecraft.server.v1_14_R1.ChatMessageType;
 import net.minecraft.server.v1_14_R1.IChatBaseComponent;
