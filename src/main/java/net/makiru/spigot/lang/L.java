@@ -1,6 +1,6 @@
 package net.makiru.spigot.lang;
 
-import net.makiru.api.config.C;
+import net.makiru.api.config.Config;
 import net.makiru.commons.tools.Languages;
 import org.bukkit.ChatColor;
 import org.jetbrains.annotations.NotNull;
@@ -72,9 +72,9 @@ public enum L {
         @Override
         public String get(@NotNull Languages language) {
             if (language.equals(FRENCH))
-                return ChatColor.GRAY + "Nos serveurs redis sont actuellement indisponibles, ou rencontrent certains problèmes. (" + C.WEB_STATUS.get() + ")\n";
+                return ChatColor.GRAY + "Nos serveurs redis sont actuellement indisponibles, ou rencontrent certains problèmes. (" + Config.properties.getProperty("web_status") + ")\n";
             else
-                return ChatColor.GRAY + "Our Redis servers are currently down, unavailable, or are experiencing some problems. (" + C.WEB_STATUS.get() + ")\n";
+                return ChatColor.GRAY + "Our Redis servers are currently down, unavailable, or are experiencing some problems. (" + Config.properties.getProperty("web_status") + ")\n";
         }
     },
 
