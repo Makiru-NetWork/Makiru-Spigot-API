@@ -1,6 +1,6 @@
-/Users/levasseur.wesley/Desktop/Makiru-Project/WorkSpace/Makiru-Spigot-API/src/main/java/net/makiru/spigot/builders/ItemStack_B.java
-/Users/levasseur.wesley/Desktop/Makiru-Project/WorkSpace/Makiru-Spigot-API/src/main/java/net/makiru/spigot/tools/PacketsUtils.java
-/Users/levasseur.wesley/Desktop/Makiru-Project/WorkSpace/Makiru-Spigot-API/src/main/java/net/makiru/spigot/core/Load.java
-/Users/levasseur.wesley/Desktop/Makiru-Project/WorkSpace/Makiru-Spigot-API/src/main/java/net/makiru/spigot/builders/Inventory_B.java
-/Users/levasseur.wesley/Desktop/Makiru-Project/WorkSpace/Makiru-Spigot-API/src/main/java/net/makiru/spigot/lang/L.java
-/Users/levasseur.wesley/Desktop/Makiru-Project/WorkSpace/Makiru-Spigot-API/src/main/java/net/makiru/spigot/tools/PingServer.java
+/Users/levasseur.wesley/Desktop/Makiru-Project/WorkSpace/Makiru-Spigot-API/src/main/java/net/makiru/spigot/api/tools/PingServer.java
+/Users/levasseur.wesley/Desktop/Makiru-Project/WorkSpace/Makiru-Spigot-API/src/main/java/net/makiru/spigot/api/tools/Tools.java
+/Users/levasseur.wesley/Desktop/Makiru-Project/WorkSpace/Makiru-Spigot-API/src/main/java/net/makiru/spigot/api/tools/L.java
+/Users/levasseur.wesley/Desktop/Makiru-Project/WorkSpace/Makiru-Spigot-API/src/main/java/net/makiru/spigot/api/builders/Inventory_B.java
+/Users/levasseur.wesley/Desktop/Makiru-Project/WorkSpace/Makiru-Spigot-API/src/main/java/net/makiru/spigot/api/tools/PacketsUtils.java
+/Users/levasseur.wesley/Desktop/Makiru-Project/WorkSpace/Makiru-Spigot-API/src/main/java/net/makiru/spigot/api/builders/ItemStack_B.java

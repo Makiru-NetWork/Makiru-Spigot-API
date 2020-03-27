@@ -1,4 +1,4 @@
-package net.makiru.spigot.lang;
+package net.makiru.spigot.api.tools;
 
 import net.makiru.api.config.Config;
 import net.makiru.commons.tools.Languages;

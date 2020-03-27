@@ -1,4 +1,4 @@
-package net.makiru.spigot.builders;
+package net.makiru.spigot.api.builders;
 
 import com.google.common.collect.Multimap;
 import org.bukkit.Color;

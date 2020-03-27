@@ -1,4 +1,4 @@
-package net.makiru.spigot.core;
+package net.makiru.spigot.api.tools;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.SimpleCommandMap;
@@ -8,10 +8,10 @@ import org.bukkit.plugin.java.JavaPlugin;
 import java.lang.reflect.Field;
 import java.util.Map;
 
-public class Load {
+public class Tools extends net.makiru.api.tools.Tools {
 
     @SuppressWarnings("unchecked")
-    public Load(JavaPlugin plugin) {
+    public static void clearCommands(JavaPlugin plugin) {
         SimpleCommandMap simpleCommandMap = ((CraftServer) plugin.getServer()).getCommandMap();
         try {
             Field field = SimpleCommandMap.class.getDeclaredField("knownCommands");

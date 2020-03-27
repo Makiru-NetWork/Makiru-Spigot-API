@@ -1,4 +1,4 @@
-package net.makiru.spigot.tools;
+package net.makiru.spigot.api.tools;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
